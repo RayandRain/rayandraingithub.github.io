@@ -3,53 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RayandRain - Academic Website</title>
+    <title>YANG Rui - Academic Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: 'Times New Roman', serif;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .header {
             text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
         }
-        .content {
-            margin-bottom: 30px;
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
         }
-        .footer {
-            text-align: center;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
+        .contact-info {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .address {
+            font-size: 0.95em;
             color: #666;
+            font-style: italic;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .education-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #ecf0f1;
+        }
+        .institution {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .degree {
+            font-style: italic;
+            color: #555;
+        }
+        .details {
+            margin-top: 8px;
+            color: #666;
+        }
+        .gpa {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .skills-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .profile-text {
+            text-align: justify;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>RayandRain</h1>
-        <h2>e-Philology and Digital Humanities Researcher</h2>
-        <p>The University of Hong Kong</p>
-    </div>
-    
-    <div class="content">
-        <h3>About</h3>
-        <p>Welcome to my academic website. I am currently pursuing research in digital text analysis and historical studies.</p>
+    <div class="container">
+        <div class="header">
+            <div class="name">YANG Rui</div>
+            <div class="contact-info">
+                u3642567@connect.hku.hk<br>
+                (+86)13168069794
+            </div>
+            <div class="address">
+                <em>Personal address:</em><br>
+                No 336, West Road of Nanxinzhuang, 250022.<br>
+                Jinan City, Shandong Province, China
+            </div>
+        </div>
         
-        <h3>Contact</h3>
-        <p>Email: u3642567@connect.hku.hk</p>
-        <p>GitHub: <a href="https://github.com/RayandRain">RayandRain</a></p>
+        <div class="section">
+            <div class="section-title">Personal Profile</div>
+            <div class="profile-text">
+                Interdisciplinary researcher with training in electronic information engineering and Chinese historical studies. Interested in how technological development shaped modern Chinese society, I am committed to integrating computational methods with historical inquiry to advance digital humanities research.
+            </div>
+        </div>
         
-        <h3>Jekyll Site</h3>
-        <p>This is a temporary page. The full Jekyll site is being deployed. Please check back soon!</p>
-    </div>
-    
-    <div class="footer">
-        <p>&copy; 2025 RayandRain. All rights reserved.</p>
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-item">
+                <div class="institution">The University of Hong Kong</div>
+                <div class="degree">Master of Arts</div>
+                <div class="details">
+                    Field: Chinese Historical Studies<br>
+                    Expected November 2025, Pass with distinction<br>
+                    <span class="gpa">GPA: 3.75/4.3</span>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="institution">The Chinese University of Hong Kong, Shenzhen</div>
+                <div class="degree">Bachelor of Engineering</div>
+                <div class="details">
+                    Major: Electronic Information Engineering, Stream: Computer Engineering<br>
+                    July 2023<br>
+                    <span class="gpa">GPA: 3.4/4.0</span><br>
+                    <strong>2019-2020, 2022-2023 Dean's list</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Native Mandarin Chinese; Advanced English (GRE Verbal: 164/170)</li>
+                <li><strong>Programming:</strong> Python, C, C++</li>
+            </ul>
+        </div>
+        
+        <div class="highlight">
+            <p><strong>Note:</strong> This is a temporary profile page. A full Jekyll-based academic website is being developed and will be available soon.</p>
+        </div>
     </div>
 </body>
 </html>
